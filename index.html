@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elias Mahyaoui Fellah — Desarrollador web</title>
+  <meta name="description" content="Portfolio de Elias Mahyaoui Fellah, desarrollador web en Valencia. Front con Angular, back con Java y Laravel, y automatización con n8n.">
+
+  <!-- Vista previa al compartir el enlace -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Elias Mahyaoui Fellah — Desarrollador web">
+  <meta property="og:description" content="Código que se entiende. Productos que funcionan.">
+
+  <link rel="icon" href="/images/favicon-claro.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="/images/favicon-oscuro.png" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="/images/touch-icon.png">
+
+  <!-- Marca que hay JavaScript: solo entonces se ocultan los elementos que aparecen al hacer scroll -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preload" href="/fonts/mazius-display.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/fuentes.css">
+  <link rel="stylesheet" href="/css/estilos.css">
+  <link rel="stylesheet" href="/css/proyectos.css">
+</head>
+<body>
+
+  <!-- ============ 01 · INICIO ============ -->
+  <header class="hero">
+    <nav class="nav">
+      <a class="nav__logo" href="#">EMF®</a>
+      <p class="estado"><span class="estado__punto"></span>Disponible para incorporarme</p>
+    </nav>
+
+    <div class="hero__intro">
+      <p class="etiqueta etiqueta--hero">Desarrollo web · Front &amp; Back · Valencia</p>
+      <h1 class="hero__titulo">Código que se entiende.<br>Productos que funcionan.</h1>
+      <p class="hero__texto">Soy Elias Mahyaoui Fellah, desarrollador web recién titulado en DAW. Front con Angular, back con Java y Laravel, y automatización con n8n.</p>
+    </div>
+
+    <div class="hero__pie">
+      <a class="boton" href="#stack">
+        Ver mi stack
+        <span class="icono icono--flecha" aria-hidden="true"></span>
+      </a>
+      <p class="hero__scroll">Desplaza para explorar ↓</p>
+    </div>
+
+    <figure class="retrato" aria-label="Retrato de Elias Mahyaoui Fellah">
+      <img src="/images/retrato.png" alt="" width="331" height="348" draggable="false">
+      <figcaption class="retrato__etiqueta"><span class="retrato__punto"></span><span>Elias / 2026</span></figcaption>
+    </figure>
+  </header>
+
+  <main>
+
+    <!-- ============ 02 · STACK ============ -->
+    <section class="stack" id="stack">
+      <div class="stack__cabecera" data-reveal="izquierda">
+        <h2 class="titulo-seccion">Con qué<br>trabajo</h2>
+        <p class="contador">02 / 02</p>
+      </div>
+
+      <div class="stack__tarjetas">
+        <article class="tarjeta tarjeta--azul" data-parallax="-1">
+          <p class="etiqueta">01 — Front-end</p>
+          <div>
+            <h3 class="tarjeta__titulo">Angular<br>&amp; JavaScript</h3>
+            <p class="tarjeta__texto">JavaScript, Angular, HTML, CSS y Bootstrap. Componentes reutilizables, consumo de APIs y maquetación que se sostiene en cualquier pantalla.</p>
+          </div>
+        </article>
+
+        <article class="tarjeta tarjeta--clara" data-parallax="1">
+          <p class="etiqueta">02 — Back-end</p>
+          <div>
+            <h3 class="tarjeta__titulo">Java<br>&amp; Laravel</h3>
+            <p class="tarjeta__texto">Java y PHP con Laravel. Modelo de datos, rutas, APIs REST y autenticación: la parte que nadie ve y que sostiene todo lo demás.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 03 · AUTOMATIZACIÓN ============ -->
+    <section class="manifiesto">
+      <p class="etiqueta">03 / Automatización</p>
+      <div class="manifiesto__texto">
+        <h2 class="manifiesto__titulo" data-reveal>El trabajo repetitivo no debería hacerlo una persona.</h2>
+        <p class="manifiesto__parrafo" data-reveal>Monto flujos en n8n para conectar servicios que no se hablan entre sí: formularios, correos, bases de datos y APIs. Acabo de terminar el grado en DAW, así que tengo poca carrera detrás y bastante oficio por delante. Lo que sé, lo sé porque lo he construido. Menos teoría, más cosas terminadas.</p>
+        <div class="herramientas" data-reveal aria-label="Herramientas: Figma, Framer y GitHub">
+          <span class="icono icono--figma" aria-hidden="true"></span>
+          <span class="icono icono--framer" aria-hidden="true"></span>
+          <span class="icono icono--github" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 · PROYECTOS ============ -->
+    <!-- Los proyectos se añaden en js/proyectos-data.js, no aquí -->
+    <section class="proyectos" id="proyectos" aria-labelledby="proyectos-titulo">
+      <div class="proyectos__glow" aria-hidden="true"></div>
+
+      <div class="proyectos__cabecera">
+        <p class="proyectos__indice" data-reveal>04 / PROYECTOS</p>
+        <h2 class="proyectos__titulo" id="proyectos-titulo">
+          <span class="linea"><span>Lo que voy</span></span>
+          <span class="linea"><span>construyendo</span></span>
+        </h2>
+        <p class="proyectos__contador" id="proyectos-contador" data-reveal></p>
+      </div>
+
+      <p class="proyectos__intro" data-reveal>Proyectos personales que hago mientras aprendo. Cada uno me ha enseñado algo que no venía en los apuntes.</p>
+
+      <ol class="proyectos__lista" id="proyectos-lista"></ol>
+    </section>
+
+  </main>
+
+  <!-- ============ 05 · CONTACTO ============ -->
+  <footer class="contacto">
+    <p class="etiqueta">05 / Contacto</p>
+    <h2 class="contacto__titulo" data-reveal="contacto">¿Montamos algo<br>que funcione?</h2>
+    <div class="contacto__datos">
+      <a class="contacto__email" href="mailto:eliasdevtech@gmail.com">eliasdevtech@gmail.com</a>
+      <!-- Cambia el enlace por la URL de tu perfil de LinkedIn -->
+      <a class="contacto__red" href="https://www.linkedin.com" target="_blank" rel="noopener">
+        <span class="icono icono--linkedin" aria-hidden="true"></span>
+        Elias Mahyaoui
+      </a>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+  <script src="/js/proyectos-data.js" defer></script>
+  <script src="/js/proyectos.js" defer></script>
+</body>
+</html>
